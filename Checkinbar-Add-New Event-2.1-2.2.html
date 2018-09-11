@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Checkinbar-Bar-2</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+<!--pop-up-step-->
+    <div class="pop-up-window">
+        <div class="pop-up-window-step">
+            <div class="pop-up-window-header">
+                <h2>Add New Event</h2>
+                <p><b>STEP 2 /</b> 5</p>
+            </div>
+            <div class="pop-up-window-content-2 ">
+                <div class="pop-up-window-left">
+                    <!--pop-up-calendar-->
+                    <table class="cal">
+                        <tr>
+                          <td class="cal-title" colspan="7"><span class="prev"><i class="material-icons m-icons-em grey">chevron_left</i></span>
+                          <span class="next"><i class="material-icons m-icons-em grey">chevron_right</i></span>
+                          May 2017</td>
+                        </tr>
+                        <tr>
+                            <th>Su</th>
+                            <th>Mo</th>
+                            <th>Tu</th>
+                            <th>We</th>
+                            <th>Th</th>
+                            <th>Fr</th>
+                            <th>Sa</th>
+                        </tr>
+                        <tr>
+                            <td class="off"><a href="#">29</a></td>
+                            <td class="off"><a href="#">30</a></td>
+                            <td class="off"><a href="#">1</a></td>
+                            <td class="off"><a href="#">2</a></td>
+                            <td class="off"><a href="#">3</a></td>
+                            <td class="off"><a href="#">4</a></td>
+                            <td><a href="#">5</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">6</a></td>
+                            <td><a href="#">7</a></td>
+                            <td><a href="#">8</a></td>
+                            <td><a href="#">9</a></td>
+                            <td><a href="#">10</a></td>
+                            <td><a href="#">11</a></td>
+                            <td><a href="#">12</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">13</a></td>
+                            <td><a href="#">14</a></td>
+                            <td class="active"><a href="#">15</a></td>
+                            <td class="active"><a href="#">16</a></td>
+                            <td class="active"><a href="#">17</a></td>
+                            <td class="active"><a href="#">18</a></td>
+                            <td class="active"><a href="#">19</a></td>
+                        </tr>
+                        <tr>
+                            <td class="active"><a href="#">20</a></td>
+                            <td class="active"><a href="#">21</a></td>
+                            <td class="active"><a href="#">22</a></td>
+                            <td class="active"><a href="#">23</a></td>
+                            <td class="active"><a href="#">24</a></td>
+                            <td class="active"><a href="#">25</a></td>
+                            <td class="active"><a href="#">25</a></td>
+                        </tr>
+                        <tr>
+                            <td class="active"><a href="#">26</a></td>
+                            <td class="active"><a href="#">27</a></td>
+                            <td class="active"><a href="#">28</a></td>
+                            <td class="active"><a href="#">29</a></td>
+                            <td class="active"><a href="#">30</a></td>
+                            <td class="active"><a href="#">31</a></td>
+                            <td class="active"><a href="#">1</a></td>
+                        </tr>
+                    </table>
+    <!--pop-up-calendar and-->
+    <!--pop-up-data-->
+                </div>
+                <div class="pop-up-window-right">
+                    <h4>Date</h4>
+                    <div class="large-bottom">
+                        <span><b>Start date</b></span>
+                        <input type="date" value="2017-05-15">
+                    </div>
+                    <div>
+                        <span><b>Start date</b></span>
+                        <input  type="date" value="2017-10-27">
+                    </div>
+                    <h4>Time</h4>
+                    <div>
+                        <span><b>Start time</b></span>
+                        <input  type="datetime" value="08:00">
+                    </div>
+                    <div>
+                        <span><b>End time</b></span>
+                        <input  type="datetime" value="22:00">
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up-window-button">
+                    <button type="button" class="btn-default btn-white">CANCEL</button>
+                    <button type="button" class="btn-default btn-red">NEXT</button>
+            </div>
+        </div>
+    </div>
+
+<!--pop-up-step and-->
+<!--pop-up-modal-->
+<div class="pop-up-modal ">
+    <h4>Custom time</h4>
+    <label class="checkbox-popup">
+          <input type="checkbox" value="">
+          <span class="checkbox-custom"></span>
+          <span class="labels">24h</span>
+    </label>
+    <div class="clearfix"></div>
+    <div class="pad-r">
+        <span><b>Start time</b></span>
+        <input  type="datetime" value="08:00">
+    </div>
+    <div>
+        <span><b>End time</b></span>
+        <input  type="datetime" value="22:00">
+    </div>
+    <div class="clearfix"></div>
+    <a href="#">+ Add time</a>
+</div>
+<!--pop-up-modal and-->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
